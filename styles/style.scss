@@ -8,6 +8,10 @@ body{
     font-family: 'Roboto Mono', monospace;
 }
 
+html {
+    scroll-behavior: smooth;
+   }
+
 //var
 
 //$main: #C17767;
@@ -46,10 +50,22 @@ $sec: #68e1fd;
 }
 
 .sect-1 li{
+    color: #000;
     text-decoration: none;
     list-style: none;
     padding-right: 1rem;
-    @include hover-blue()
+   
+}
+
+nav a:hover{
+    color: $sec
+}
+
+
+
+nav a{
+    color: black;
+    text-decoration: none;
 }
 
 .one-left{
@@ -59,6 +75,7 @@ $sec: #68e1fd;
 
 .one-right{
     padding-right: 1rem;
+    padding-top: .5rem;
 }
 
 //section 2
@@ -116,6 +133,7 @@ $sec: #68e1fd;
 
 .sect-5{
     padding-top: 9rem;
+    padding-bottom: 2rem;
 }
 
 .sect-5 h2{
@@ -187,6 +205,7 @@ $sec: #68e1fd;
 .sect-5{
     padding-bottom: 1rem;
     margin-top: -1.5rem;
+    
 }
 
 
@@ -223,3 +242,23 @@ $sec: #68e1fd;
  
 
 }
+
+
+//x-large
+
+@media only screen and (min-width: 1450px) {
+    .sect-2 {
+        margin-left: 12rem;
+        margin-top: 1rem;
+    }
+
+    .two-right {
+        margin-left: 3.5rem;
+    }
+
+    .two-right h1{
+        width: 400px;
+    }
+
+}
+

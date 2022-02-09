@@ -9,6 +9,10 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .sect-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,13 +30,19 @@ body {
 }
 
 .sect-1 li {
+  color: #000;
   text-decoration: none;
   list-style: none;
   padding-right: 1rem;
 }
 
-.sect-1 li:hover {
+nav a:hover {
   color: #68e1fd;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
 }
 
 .one-left {
@@ -45,6 +55,7 @@ body {
 
 .one-right {
   padding-right: 1rem;
+  padding-top: .5rem;
 }
 
 .sect-2 {
@@ -96,6 +107,7 @@ body {
 
 .sect-5 {
   padding-top: 9rem;
+  padding-bottom: 2rem;
 }
 
 .sect-5 h2 {
@@ -183,6 +195,19 @@ body {
   }
   .two-right h1 {
     width: 220px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .sect-2 {
+    margin-left: 12rem;
+    margin-top: 1rem;
+  }
+  .two-right {
+    margin-left: 3.5rem;
+  }
+  .two-right h1 {
+    width: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
